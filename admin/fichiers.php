@@ -255,7 +255,7 @@ function display_files_list($arr)
 function traitment_form_file($file)
 {
     global $vars;
-    $fileId = (int)filter_input(INPUT_POST, 'file_id');
+    $fileId = (string)filter_input(INPUT_POST, 'file_id');
     if ($vars['upload']) {
         // Addition
         // via $_FILES
